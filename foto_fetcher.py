@@ -37,8 +37,7 @@ def fetch(url=api_url):
     query = requests.get(url)
 
     # Here in case I run into trouble while running the code
-    assert query.status_code == 200,
-    'Failed to retrieve a proper response from the Unsplash API.'
+    assert query.status_code == 200, 'Unsuccessful connection to the Unsplash API.'
 
     # hand the query back
     return query
